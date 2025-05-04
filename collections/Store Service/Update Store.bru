@@ -1,0 +1,29 @@
+meta {
+  name: Update Store
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/store/8aabdb93-a0e7-41cd-893b-271482164217
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Anderson Store",
+    "description": "A simple description",
+    "phone": "19999217692",
+    "cnpj": "97987908000173",
+    "address": {
+      "street": "Rua frança",
+      "number": 405,
+      "district": "Vila Santa Maria",
+      "city": "Americana",
+      "state": "São Paulo",
+      "country": "Brasil",
+      "cep": "13471650"
+    }
+  }
+}

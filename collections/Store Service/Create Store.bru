@@ -1,0 +1,29 @@
+meta {
+  name: Create Store
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/store
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Anderson Store",
+    "description": "A simple description",
+    "phone": "19999217692",
+    "cnpj": "97987908000172",
+    "address": {
+      "street": "Rua frança",
+      "number": 405,
+      "district": "Vila Santa Maria",
+      "city": "Americana",
+      "state": "São Paulo",
+      "country": "Brasil",
+      "cep": "13471650"
+    }
+  }
+}
